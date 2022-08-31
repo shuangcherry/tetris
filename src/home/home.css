@@ -1,0 +1,59 @@
+.box{
+    width:222px;
+    display:flex;
+    flex-wrap: wrap;
+    padding:4px;
+    margin:20px auto;
+    border:2px solid #000;
+    background-color: #ddd;
+}
+.row-cell{
+    display: flex;
+    width:auto;
+}
+
+.cell{
+    display:flex;
+    width:10px;
+    height:10px;
+    border:2px solid #bbb;
+    padding:2px;
+    margin:2px;
+}
+.cell-active{
+    border-color:#000;
+}
+.cell-inner{
+    width:10px;
+    height:10px;
+    background-color: #bbb;
+}
+.cell-active .cell-inner{
+    background-color: #000;
+}
+.over-cell{
+    border-color:red;
+}
+.over-cell .cell-inner{
+    background-color:red;
+}
+.bottom-box{
+    display: flex;
+    margin:0 auto;
+    width:300px;
+    justify-content: space-around;
+}
+.bottom-box .drop-btn{
+    width:80px;
+    height:40px;
+}
+.bottom-box .btn-boxs button{
+    width:60px;
+    height:30px;
+}
+.left-right-btn-box{
+    width:180px;
+    margin:10px auto;
+    display: flex;
+    justify-content: space-between;
+}
