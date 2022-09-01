@@ -7,7 +7,10 @@ export default function CreateCells(props) {
             {
                 props.cells.map((item) => {
                     return (
-                        <span className={`cell ${item.isActive? 'cell-active' : ''} ${props.isOver ? 'over-cell' : ''}`} key={item.id}>
+                        <span className={`cell 
+                        ${item.isActive? 'cell-active' : ''} 
+                        ${props.isOver ? 'over-cell' : ''}
+                        ${item.isClear ? 'clear-cell' : ''}`} key={item.id}>
                             <span className='cell-inner'></span>
                         </span>
                     )

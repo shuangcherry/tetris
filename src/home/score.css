@@ -1,0 +1,9 @@
+.next-box{
+    width:88px;
+    display:flex;
+    flex-wrap: wrap;
+    padding:4px;
+    margin:20px auto;
+    border:2px solid #ddd;
+    background-color: #ddd;
+}

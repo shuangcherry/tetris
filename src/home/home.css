@@ -1,3 +1,10 @@
+.top-box{
+    display:flex;
+    flex-direction: row;
+    width:500px;
+    justify-content: space-around;
+    margin:20px auto;
+}
 .box{
     width:222px;
     display:flex;
@@ -6,6 +13,9 @@
     margin:20px auto;
     border:2px solid #000;
     background-color: #ddd;
+}
+.right-box{
+    display: flex;
 }
 .row-cell{
     display: flex;
@@ -36,6 +46,46 @@
 }
 .over-cell .cell-inner{
     background-color:red;
+}
+.cell.clear-cell{
+    animation:clear-border-animation 1s infinite;
+}
+.clear-cell .cell-inner{
+    animation:clear-animation 1s infinite;
+}
+@keyframes clear-animation{
+    0% {
+        background:rgba(240, 195, 192, 0.2);
+    }
+    25% {
+        background:rgba(220,80,70,0.4);
+    }
+    50% {
+        background:rgba(220,80,70,1);
+    }
+    75% {
+        background:rgba(220,80,70,0.6);
+    }
+    100% {
+        background:rgba(240, 100, 65, 0.342)
+    }
+}
+@keyframes clear-border-animation{
+    0% {
+        border-color:rgba(240, 195, 192, 0.2);
+    }
+    25% {
+        border-color:rgba(220,80,70,0.4);
+    }
+    50% {
+        border-color:rgba(220,80,70,1);
+    }
+    75% {
+        border-color:rgba(220,80,70,0.6);
+    }
+    100% {
+        border-color:rgba(240, 100, 65, 0.342)
+    }
 }
 .bottom-box{
     display: flex;
