@@ -238,14 +238,16 @@ export default class Home extends React.Component {
             }
             case 9: {
                 newLocation = getCellByType(x+2,10);
+                this.type = 10;
                 break;
             }
             case 10: {
-                if(x % Col < 3 || x % Col > Col - 2){
+                if(x % Col < 2 || x % Col > Col - 2){
                     flag = false;
                     break;
                 }
                 newLocation = getCellByType(x, 9);
+                this.type = 9;
                 break;
             }
             default: break;

@@ -7,7 +7,8 @@ export function ScoreView(props){
         return {...item, id:index};
     })
     let [getCells, setCells] = useState(cells);
-    useEffect(() => {   
+    useEffect(() => { 
+        console.log('score')  
         setCells( prev => {
             return prev.map(item => {
                 return {
@@ -21,6 +22,9 @@ export function ScoreView(props){
                 }
             })
         })
+        return () => {
+            console.log('score unmount')
+        }
     },[props.nextLocation]);
     return (
         <div>
