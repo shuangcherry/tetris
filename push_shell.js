@@ -1,5 +1,4 @@
 const execSync = require('child_process').execSync;
-// console.log(process.argv)
 function execCommand(command){
     return execSync(command).toString();
 }
